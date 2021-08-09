@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngx-typed-form-builder": [
+        "dist/ngx-typed-form-builder/ngx-typed-form-builder",
+        "dist/ngx-typed-form-builder"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

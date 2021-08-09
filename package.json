@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint"
+    "build": "ng build ngx-typed-form-builder --configuration production",
+    "test": "ng test ngx-typed-form-builder",
+    "lint": "ng lint ngx-typed-form-builder",
+    "postinstall": "ngcc",
+    "publish": "npm publish dist/ngx-typed-form-builder"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,7 @@
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1102.13",
     "@angular/cli": "~11.2.2",
     "@angular/compiler-cli": "~11.2.3",
     "@types/jasmine": "~3.6.0",
@@ -35,6 +38,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
